@@ -15,9 +15,9 @@ $(function() {
                             <td class="id">' + product.id + '</td>\
                             <td><input type="text" class="name" value="' + product.name + '"></td>\
                             <td>\
-                                <button class="update-button">UPDATE/PUT</button>\
-                                <button class="delete-button">DELETE</button>\
-                            </td>\
+                                <button class="bg-primary">UPDATE/PUT</button>\
+                                <button class="bg-danger">DELETE</button>\
+                            </td><br><br>\
                         </tr>\
                     ');
                 });
@@ -45,7 +45,7 @@ $(function() {
     });
 
     // UPDATE/PUT
-    $('table').on('click', '.update-button', function() {
+    $('table').on('click', '.bg-primary', function() {
         var rowEl = $(this).closest('tr');
         var id = rowEl.find('.id').text();
         var newName = rowEl.find('.name').val();
@@ -63,7 +63,7 @@ $(function() {
     });
 
     // DELETE
-    $('table').on('click', '.delete-button', function() {
+    $('table').on('click', '.bg-danger', function() {
         var rowEl = $(this).closest('tr');
         var id = rowEl.find('.id').text();
 

@@ -1,0 +1,15 @@
+html{
+  background-color: white;
+  height: 100%;
+}
+
+.container{
+  background-color: cyan;
+  height: 95%;
+}
+
+hr{
+  background-color: black;
+  height: 0.5%;
+  width: 100%;
+}

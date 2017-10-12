@@ -5,11 +5,15 @@ var bodyParser = require('body-parser');
 var products = [
 {
     id: 1,
-    name: 'laptop'
+    name: 'Laptop'
 },
 {
     id: 2,
-    name: 'microwave'
+    name: 'Microwave'
+},
+{
+    id: 3,
+    name: 'Stove'
 }
 ];
 
@@ -66,5 +70,5 @@ app.delete('/products/:id', function(req, res) {
 });
 
 app.listen(PORT, function() {
-    console.log('Server listening on ' + PORT);
+    console.log('Server listening on port:' + PORT);
 });
